@@ -1,12 +1,20 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+}
+
 body {
     margin: 0;
-
+    font-family: 'Abril Fatface', serif;
+    width: 100%;
 }
 
 .title-section {
     background-color: #111B06;
     color: #E7F7D8;
-    font-family: 'Abril Fatface', serif;
+    width: 100%;
+    margin: 0;
 }
 
 .title-section a {
@@ -33,7 +41,6 @@ body {
     color: #a9a79d;
 }
 
-
 .name-container {
     display: flex;
     flex-direction: column;
@@ -49,3 +56,40 @@ body {
 .name-container a {
     background-color: #1D8958;
 }
+
+
+
+/* ABOUT ME SECTION */
+
+.about-section {
+    background-color: #E86A33;
+    color: #111B06;
+    width: 100%;
+    height: 85vh;
+    margin: 0;
+}
+
+#about-me-title {
+    padding: 4rem;
+    font-size: 4rem;
+}
+
+.about-me {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 40% 60%;
+}
+
+.about-me p {
+    font-size: 2rem;
+}
+
+.about-me img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+/* END OF SECTION */
