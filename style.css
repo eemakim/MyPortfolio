@@ -93,3 +93,15 @@ body {
 }
 
 /* END OF SECTION */
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio-section {
+    background-color: #1D8958;
+    padding: 4rem;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+/* END OF SECTION */
