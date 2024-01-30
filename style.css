@@ -51,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .name-container h1 {
@@ -116,6 +116,7 @@ body {
 
 .portfolio-section {
     background-color: #1D8958;
+    color: #111B06;
     padding: 4rem;
     font-size: 2rem;
     min-height: 100vh;
@@ -124,9 +125,35 @@ body {
 .portfolio-grid {
     margin-top: 3rem;
     background-color: #E7F7D8;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     max-width: 100%;
+    border-radius: 15px;
+}
+
+.project-items {
+    background-color: #E86A33;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.project-items .desc {
+    font-size: 1rem;
+}
+
+.project-items a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #111B06;
+}
+
+.project-items .link-buttons {
+    background-color: none;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.project-items .link-buttons:hover {
+    background-color: #1D8958;
 }
 
 /* END OF SECTION */
@@ -137,6 +164,7 @@ body {
 .contact-section {
     background-color: #E7F7D8;
     color: #111B06;
+    min-height: 100vh;
     padding: 4rem;
     font-size: 2rem;
     display: flex;
