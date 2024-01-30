@@ -40,8 +40,10 @@ body {
 .navbar-container {
     display: flex;
     gap: 5%;
-    justify-content: flex-end;
+    align-items: center;
     padding: 3%;
+    position: fixed;
+    right: 3%;
 }
 
 .navbar-container a {
