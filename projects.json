@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "projectName": "Project 1",
+            "img": "#",
+            "projectDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
+        incidunt maxime blanditiis hic provident magnam sint consequatur dicta!","githubLink": "https: //github.com/eemakim?tab=repositories"
+        },
+        {
+            "projectName": "Project 2",
+            "img": "#",
+            "projectDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
+        incidunt maxime blanditiis hic provident magnam sint consequatur dicta!","githubLink": "https: //github.com/eemakim?tab=repositories"
+        },
+        {
+            "projectName": "Project 3",
+            "img": "#",
+            "projectDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
+            incidunt maxime blanditiis hic provident magnam sint consequatur dicta!","githubLink": "https://github.com/eemakim?tab=repositories"
+        },
+        {
+            "projectName": "Project 4",
+            "img": "#",
+            "projectDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
+            incidunt maxime blanditiis hic provident magnam sint consequatur dicta!","githubLink": "https://github.com/eemakim?tab=repositories"
+        },
+        {
+            "projectName": "Project 5",
+            "img": "#",
+            "projectDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
+            incidunt maxime blanditiis hic provident magnam sint consequatur dicta!","githubLink": "https://github.com/eemakim?tab=repositories"
+        },
+        {
+            "projectName": "Project 6",
+            "img": "#",
+            "projectDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
+            incidunt maxime blanditiis hic provident magnam sint consequatur dicta!","githubLink": "https://github.com/eemakim?tab=repositories"
+        }
+    ]
+}
