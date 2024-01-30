@@ -118,7 +118,15 @@ body {
     background-color: #1D8958;
     padding: 4rem;
     font-size: 2rem;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.portfolio-grid {
+    margin-top: 3rem;
+    background-color: #E7F7D8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
 }
 
 /* END OF SECTION */
