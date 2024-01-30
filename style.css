@@ -136,6 +136,7 @@ body {
     margin-top: 3rem;
     background-color: #E7F7D8;
     display: flex;
+    flex-direction: column;
     max-width: 100%;
     border-radius: 15px;
 }
