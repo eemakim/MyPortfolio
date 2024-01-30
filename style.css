@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Abril Fatface', serif;
@@ -66,7 +70,7 @@ body {
     background-color: #E86A33;
     color: #111B06;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 4rem;
 }
@@ -78,10 +82,11 @@ body {
 
 .about-me {
     display: flex;
-    gap: 10%;
+    gap: 8%;
     justify-content: center;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 1rem;
+    max-width: 80%;
 }
 
 .about-me-text {
@@ -154,6 +159,23 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.contact-button {
+    margin-top: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Abril Fatface', serif;
+    cursor: pointer;
+    border: none;
+    background-color: #E86A33;
+    color: #111B06;
+}
+
+.contact-button:hover {
+    background-color: #743317;
+    color: #E7F7D8;
+}
+
 .socials-links {
     display: flex;
     gap: 2rem;
@@ -163,4 +185,11 @@ body {
 .socials-links a {
     color: #E86A33;
     font-size: 5rem;
+}
+
+
+footer {
+    padding: 1rem 4rem;
+    background-color: #111B06;
+    color: #E7F7D8;
 }
