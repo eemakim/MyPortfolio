@@ -1,3 +1,30 @@
+// *** Nav bar scrolling highlight *** 
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+
+let current = 'home';
+
+window.addEventListener('scroll', () => {
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+            current = section.id;
+        }
+    })
+
+    navLinks.forEach(navLink => {
+        if (navLink.href.includes(current)) {
+            document.querySelector('.active').classList.remove('active');
+            navLink.classList.add('active');
+
+        }
+    })
+})
+
+
+
 // *** JS for JSON fetch request ***
 const projectsDisplay = document.querySelector('.portfolio-grid')
 

@@ -12,7 +12,9 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-section {
+header,
+section,
+footer {
     scroll-snap-align: start;
 }
 
@@ -22,14 +24,63 @@ body {
     width: 100%;
 }
 
-.title-section {
+/* Nav bar */
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    background-color: #111B06;
+    position: fixed;
+    top: 0;
+    height: 7%;
+    padding: 3%;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: #E7F7D8;
+    border-radius: 15px;
+    padding: 0.3rem 0.6rem;
+}
+
+.navbar-container a:hover {
+    background-color: #E7F7D8;
+    color: #111B06;
+}
+
+/* active nav menu bar */
+.navbar-container a.active {
+    background-color: white;
+    color: #111B06;
+    transition: all 1s;
+}
+
+
+/* Name title section (home-section) */
+section.home-section {
     background-color: #111B06;
     color: #E7F7D8;
     width: 100%;
-    margin: 0;
+    margin-top: 2rem;
+    min-height: 100vh;
 }
 
-.title-section a {
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20%;
+}
+
+.name-container h1 {
+    font-size: 10rem;
+}
+
+section.home-section a {
+    background-color: #1D8958;
     text-decoration: none;
     color: #E7F7D8;
     padding: 1rem;
@@ -37,46 +88,30 @@ body {
     transition: all 600ms;
 }
 
-.navbar-container {
+section.home-section a:hover {
+    background-color: #111B06;
+}
+
+
+/* need to reposition this at some point!!!! */
+#CV-link {
     display: flex;
-    gap: 5%;
+    justify-content: center;
     align-items: center;
-    padding: 3%;
-    position: fixed;
-    right: 3%;
-}
-
-.navbar-container a {
+    width: fit-content;
     background-color: #E86A33;
+    transition: all 500ms;
 }
 
-.navbar-container a:hover {
+#CV-link:hover {
     background-color: #743317;
     color: #a9a79d;
 }
 
-.name-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    min-height: 100vh;
-}
-
-.name-container h1 {
-    font-size: 10rem;
-}
-
-.name-container a {
-    background-color: #1D8958;
-}
-
-
 
 /* ABOUT ME SECTION */
 
-.about-section {
+section.about-section {
     background-color: #E86A33;
     color: #111B06;
     width: 100%;
@@ -124,7 +159,7 @@ body {
 
 /* PORTFOLIO SECTION */
 
-.portfolio-section {
+section.portfolio-section {
     background-color: #1D8958;
     color: #111B06;
     padding: 4rem;
@@ -172,7 +207,7 @@ body {
 
 /* CONTACT SECTION */
 
-.contact-section {
+section.contact-section {
     background-color: #E7F7D8;
     color: #111B06;
     min-height: 100vh;
