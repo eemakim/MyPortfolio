@@ -27,7 +27,7 @@ body {
 section {
     width: 100%;
     min-height: 100vh;
-    padding: 6rem 4rem;
+    padding: 2rem 4rem;
     font-size: 2rem;
 }
 
@@ -48,8 +48,8 @@ section h2 {
     background-color: #111B06;
     position: fixed;
     top: 0;
-    height: 7%;
-    padding: 3%;
+    height: 1rem;
+    padding: 1.7%;
 }
 
 .navbar-container a {
@@ -157,6 +157,37 @@ section.about-section {
     height: 300px;
 }
 
+@media screen and (max-width: 950px) {
+    section h2 {
+        padding: 2rem;
+    }
+
+    .about-me {
+        padding: 1rem 2rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    section h2 {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about-me-text {
+        display: block
+    }
+
+    .about-me-desc {
+        display: none;
+    }
+}
+
 /* END OF SECTION */
 
 
@@ -167,14 +198,16 @@ section.portfolio-section {
     color: #111B06;
 }
 
-section.portfolio-section p {
-    padding: 1.5rem 4rem;
-}
-
 .portfolio-section h2 {
     padding: 4rem 4rem 2rem 4rem;
     font-size: 4rem;
 }
+
+section.portfolio-section p {
+    padding: 1.5rem 4rem;
+}
+
+
 
 .portfolio-section p {
     padding-left: 4rem;
@@ -186,11 +219,11 @@ section.portfolio-section p {
     background-color: #E7F7D8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5% 1%;
+    gap: 1% 1%;
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 5px #111B06;
-    padding: 3%;
+    padding: 5%;
 }
 
 .project-item {
@@ -229,6 +262,64 @@ section.portfolio-section p {
 .code-symbol {
     display: none;
 }
+
+
+/* SLIDESHOW FOR MOBILE VIEW - COME BACK TO? */
+.prev,
+.next {
+    display: none;
+    background-color: #1d89586e;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.dots {
+    display: none;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: #E86A33;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s;
+}
+
+/* SLIDESHOW FOR MOBILE VIEW - COME BACK TO? */
+
+
+
+
+@media screen and (max-width: 950px) {
+    section.portfolio-section {
+        padding: 1rem 1.5rem;
+    }
+
+    .portfolio-section h2 {
+        padding-bottom: 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1%;
+        padding: 5%;
+    }
+
+    .project-item {
+        /* display: none; */
+    }
+}
+
 
 /* .project-items .link-buttons {
     background-color: none;

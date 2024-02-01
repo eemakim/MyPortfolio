@@ -35,7 +35,7 @@ fetch('projects.json').then(function (response) {
 
     data.projects.forEach(function (project) {
         projectsDisplay.innerHTML += `<div class="project-item"><a href="${project.githubLink}" target="_blank">
-        <img src="${project.img}" class="project-image"/>
+        <img src="${project.img}" class="project-image" alt="thumbnail image of project"/>
         <p class="project-desc">${project.projectDesc}</p>
         <h4 class="project-name"><span class="code-symbol">< </span>${project.projectName}<span class="code-symbol"> /></span></h4></a></div>
         `
