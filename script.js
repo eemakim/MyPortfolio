@@ -43,10 +43,6 @@ fetch('projects.json').then(function (response) {
 })
 
 
-//  *** show code signs on hover in projects ***
-
-
-
 
 
 // *** Form submit event ***

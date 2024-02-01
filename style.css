@@ -231,6 +231,18 @@ section.portfolio-section p {
     margin: 10px;
     border-radius: 15px;
     box-shadow: 2px 5px 10px #743317;
+    cursor: pointer;
+
+
+}
+
+.project-item:hover .project-desc {
+    display: block;
+
+}
+
+.project-item:hover .code-symbol {
+    display: inline;
 }
 
 .project-item a {
@@ -252,6 +264,9 @@ section.portfolio-section p {
     padding: 0.5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    display: none;
+    transition: all 2s;
+
 }
 
 .project-name {
@@ -261,6 +276,7 @@ section.portfolio-section p {
 
 .code-symbol {
     display: none;
+    transition: all 1s ease;
 }
 
 
