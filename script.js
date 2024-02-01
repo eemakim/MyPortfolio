@@ -34,13 +34,19 @@ fetch('projects.json').then(function (response) {
     console.log(data.projects)
 
     data.projects.forEach(function (project) {
-        projectsDisplay.innerHTML += `<div class="project-items">
-        <div>${project.img}</div>
-        <p class="project-item desc">${project.projectDesc}</p>
-        <div class="link-buttons"><a href="${project.githubLink}" target="_blank"><h4><span id="code">< </span>${project.projectName}<span> /></span></h4></a></div>
-        </div><span>hello</span>`
+        projectsDisplay.innerHTML += `<div class="project-item"><a href="${project.githubLink}" target="_blank">
+        <img src="${project.img}" class="project-image"/>
+        <p class="project-desc">${project.projectDesc}</p>
+        <h4 class="project-name"><span class="code-symbol">< </span>${project.projectName}<span class="code-symbol"> /></span></h4></a></div>
+        `
     })
 })
+
+
+//  *** show code signs on hover in projects ***
+
+
+
 
 
 // *** Form submit event ***

@@ -180,40 +180,65 @@ section.portfolio-section p {
     padding-left: 4rem;
 }
 
+
+/* Project cards */
 .portfolio-grid {
     background-color: #E7F7D8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5% 1%;
     max-width: 100%;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px 10px #111B06;
+    box-shadow: 5px 5px 10px 5px #111B06;
+    padding: 3%;
 }
 
-.project-items {
+.project-item {
     background-color: #E86A33;
     margin: 10px;
     border-radius: 15px;
+    box-shadow: 2px 5px 10px #743317;
 }
 
-.project-items .desc {
+.project-item a {
     font-size: 1rem;
-}
-
-.project-items a {
-    font-size: 2rem;
     text-decoration: none;
     color: #111B06;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.project-items .link-buttons {
+.project-image {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.project-desc {
+    padding: 0.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.project-name {
+    font-size: 2rem;
+    padding-bottom: 3%;
+}
+
+.code-symbol {
+    display: none;
+}
+
+/* .project-items .link-buttons {
     background-color: none;
     border-radius: 15px;
     padding: 1rem;
-}
+} */
 
-.project-items .link-buttons:hover {
+/* .project-items .link-buttons:hover {
     background-color: #1D8958;
-}
+} */
 
 /* END OF SECTION */
 
