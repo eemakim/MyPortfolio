@@ -129,10 +129,11 @@ section.about-section {
 
 .about-me {
     display: flex;
-    gap: 8%;
+    gap: 10%;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
+    padding: 1rem 4rem;
+
 }
 
 .about-me-text {
@@ -170,12 +171,22 @@ section.portfolio-section p {
     padding: 1.5rem 4rem;
 }
 
+.portfolio-section h2 {
+    padding: 4rem 4rem 2rem 4rem;
+    font-size: 4rem;
+}
+
+.portfolio-section p {
+    padding-left: 4rem;
+}
+
 .portfolio-grid {
     background-color: #E7F7D8;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 100%;
     border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px #111B06;
 }
 
 .project-items {
@@ -217,7 +228,11 @@ section.contact-section {
     gap: 25px;
 }
 
-section.contact-section p {
+.contact-section h2 {
+    padding: 4rem 4rem 2rem 4rem;
+}
+
+.contact-section p {
     padding-left: 4rem;
 }
 
