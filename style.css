@@ -76,10 +76,17 @@ section h2 {
     flex-direction: row;
 }
 
+
 .burger-menu {
     /* display: inline; */
     display: none;
 }
+
+.mobile-nav {
+    display: none;
+}
+
+
 
 /* Name title section (home-section) */
 section.home-section {
@@ -154,7 +161,7 @@ section.home-section a:hover {
 
 @media screen and (max-width: 650px) {
     .navbar-container {
-        padding: 5%;
+        padding: 4%;
     }
 
     .navMenu-container {
@@ -172,8 +179,38 @@ section.home-section a:hover {
         padding-bottom: 1rem;
     }
 
-    /* TO SORT OUT AT SOME POINT */
-    /* .burger-menu {} */
+    .burger-menu {
+        display: block;
+        padding-right: 1%;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav-container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        position: fixed;
+        right: 0;
+        top: 4.5%;
+        transition: all 1s ease-in-out;
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+        color: #E7F7D8;
+        border: 1px solid #E7F7D8;
+        background-color: #111B06;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 5px;
+    }
+
+    .mobile-nav.visible {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -240,7 +277,6 @@ section.about-section {
     }
 }
 
-
 @media screen and (max-width: 650px) {
     section h2 {
         text-align: center;
@@ -284,6 +320,7 @@ section.portfolio-section p {
     border-radius: 15px;
     box-shadow: 5px 5px 10px 5px #111B06;
     padding: 5%;
+    align-items: start;
 }
 
 .project-item {

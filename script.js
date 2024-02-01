@@ -23,6 +23,23 @@ window.addEventListener('scroll', () => {
     })
 })
 
+// *** Nav menu for mobile ***
+
+const menuLines = document.querySelector('.burger-menu')
+const navMenu = document.querySelector('.mobile-nav')
+
+menuLines.addEventListener('click', function () {
+    navMenu.classList.toggle('visible')
+})
+
+const menuLinks = document.querySelectorAll('.mobile-nav a')
+menuLinks.forEach(function (menuLink) {
+
+    menuLink.addEventListener('click', function () {
+        navMenu.classList.toggle('visible')
+    })
+})
+
 
 
 // *** JS for JSON fetch request ***
