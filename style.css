@@ -176,6 +176,13 @@ section.home-section a:hover {
     /* .burger-menu {} */
 }
 
+@media screen and (max-width: 650px) {
+    .name-container h1 {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
+}
+
 
 /* ABOUT ME SECTION */
 
@@ -285,8 +292,11 @@ section.portfolio-section p {
     border-radius: 15px;
     box-shadow: 2px 5px 10px #743317;
     cursor: pointer;
+    filter: brightness(60%)
+}
 
-
+.project-item:hover {
+    filter: brightness(100%)
 }
 
 .project-item:hover .project-desc {
