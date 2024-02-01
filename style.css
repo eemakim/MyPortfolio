@@ -71,6 +71,15 @@ section h2 {
     transition: all 1s;
 }
 
+.navMenu-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.burger-menu {
+    /* display: inline; */
+    display: none;
+}
 
 /* Name title section (home-section) */
 section.home-section {
@@ -84,6 +93,7 @@ section.home-section {
     align-items: center;
     gap: 30px;
     padding-top: 20%;
+    justify-content: center;
 }
 
 .name-container h1 {
@@ -103,8 +113,6 @@ section.home-section a:hover {
     background-color: #111B06;
 }
 
-
-/* need to reposition this at some point!!!! */
 #CV-link {
     display: flex;
     justify-content: center;
@@ -117,6 +125,55 @@ section.home-section a:hover {
 #CV-link:hover {
     background-color: #743317;
     color: #a9a79d;
+}
+
+@media screen and (max-width: 954px) {
+    .navbar-container {
+        padding: 2.5%;
+    }
+
+    .name-container h1 {
+        font-size: 8rem;
+        padding-bottom: 2rem;
+    }
+
+    section.home-section a {
+        font-size: 1rem;
+        ;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .name-container h1 {
+        font-size: 6rem;
+        padding-bottom: 1rem;
+        padding-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .navbar-container {
+        padding: 5%;
+    }
+
+    .navMenu-container {
+        flex-direction: column;
+        position: fixed;
+        top: 8%;
+        right: 5%;
+        background-color: #FFFFFF;
+        display: none;
+        color: #111B06;
+    }
+
+    .name-container h1 {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    /* TO SORT OUT AT SOME POINT */
+    /* .burger-menu {} */
 }
 
 
@@ -155,6 +212,7 @@ section.about-section {
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    box-shadow: 5px 5px 5px #111B06;
 }
 
 @media screen and (max-width: 950px) {
@@ -163,7 +221,15 @@ section.about-section {
     }
 
     .about-me {
-        padding: 1rem 2rem;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .about-me-text {
+        width: 100%;
+        gap: 2rem;
+        text-align: center;
     }
 }
 
@@ -172,19 +238,6 @@ section.about-section {
     section h2 {
         text-align: center;
         padding-top: 1rem;
-    }
-
-    .about-me {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .about-me-text {
-        display: block
-    }
-
-    .about-me-desc {
-        display: none;
     }
 }
 
@@ -425,4 +478,19 @@ footer {
     padding: 1rem 4rem;
     background-color: #111B06;
     color: #E7F7D8;
+}
+
+@media screen and (max-width: 950px) {
+    section.contact-section {
+        align-items: center;
+    }
+
+    .contact-section p {
+        text-align: center;
+        padding: 0;
+    }
+
+    .socials-links {
+        padding: 0;
+    }
 }
