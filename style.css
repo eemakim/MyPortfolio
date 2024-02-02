@@ -162,6 +162,8 @@ section.home-section a:hover {
 @media screen and (max-width: 650px) {
     .navbar-container {
         padding: 4%;
+        font-size: 0.7rem;
+        padding-top: 4%;
     }
 
     .navMenu-container {
@@ -192,18 +194,18 @@ section.home-section a:hover {
     .mobile-nav-container {
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        width: 100%;
         position: fixed;
         right: 0;
         top: 4.5%;
+        margin-top: 2%;
         transition: all 1s ease-in-out;
     }
 
     .mobile-nav a {
         text-decoration: none;
-        color: #E7F7D8;
-        border: 1px solid #E7F7D8;
-        background-color: #111B06;
+        color: #111B06;
+        background-color: #FFFFFF;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 5px;
     }
@@ -211,9 +213,18 @@ section.home-section a:hover {
     .mobile-nav.visible {
         display: block;
     }
-}
 
-@media screen and (max-width: 650px) {
+    .empty-space {
+        background-color: #FFFFFF;
+        height: 20px;
+    }
+
+    .contact-icons {
+        display: inline-flex;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
     .name-container h1 {
         font-size: 4rem;
         padding-bottom: 1rem;
