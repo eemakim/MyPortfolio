@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myPortfolio</title>
     <script defer src="script.js"></script>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 
 
@@ -62,11 +62,12 @@
 
     <!-- 1st SECTION - ABOUT ME -->
     <section class="about-section" id="about">
-        <h2 id="about-me-title">About me</h2>
+        <h2 id="about-me-title">Hey, I'm Emma</h2>
 
         <div class="about-me">
             <div class="about-me-text">
-                <p class="about-me-goat">Hey, I'm Emma and I'm the GOAT</p>
+                <p class="about-me-goat">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span></span>
                 <p class="about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex consequuntur
                     incidunt maxime
                     blanditiis hic provident magnam sint consequatur dicta! Voluptas, est excepturi! Architecto
@@ -75,6 +76,79 @@
             </div>
             <img src="https://cdn.pixabay.com/photo/2024/01/24/09/03/goat-8529099_1280.jpg" alt="profile-picture">
         </div>
+
+        <div class="timeline-container">
+            <div class="top">
+                <h4 class="date">March 2024</h4>
+                <div class="text">
+                    <h5 class="text-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur
+                        praesentium
+                        doloremque optio laudantium inventore distinctio consequuntur commodi veniam fugit ut nesciunt
+                        quae
+                        iure
+                        quisquam repudiandae, pariatur atque odio libero.</p>
+                </div>
+                <h4 class="date">May 2024</h4>
+                <div class="text">
+                    <h5 class="text-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur
+                        praesentium
+                        doloremque optio laudantium inventore distinctio consequuntur commodi veniam fugit ut nesciunt
+                        quae
+                        iure
+                        quisquam repudiandae, pariatur atque odio libero.</p>
+                </div>
+                <h4 class="date">July 2024</h4>
+            </div>
+
+            <div class="middle-line">
+                <div class="middle-line-dot"></div>
+                <div class="middle-line-dot"></div>
+                <div class="middle-line-dot"></div>
+                <div class="middle-line-dot"></div>
+                <div class="middle-line-dot end"></div>
+
+            </div>
+
+            <div class="bottom">
+                <div class="text">
+                    <h5 class="text-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur
+                        praesentium
+                        doloremque optio laudantium inventore distinctio consequuntur commodi veniam fugit ut nesciunt
+                        quae
+                        iure
+                        quisquam repudiandae, pariatur atque odio libero.</p>
+                </div>
+                <h4 class="date">April 2024</h4>
+                <div class="text">
+                    <h5 class="text-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur
+                        praesentium
+                        doloremque optio laudantium inventore distinctio consequuntur commodi veniam fugit ut nesciunt
+                        quae
+                        iure
+                        quisquam repudiandae, pariatur atque odio libero.</p>
+                </div>
+                <h4 class="date">June 2024</h4>
+                <div class="text">
+                    <h5 class="text-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="text-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur
+                        praesentium
+                        doloremque optio laudantium inventore distinctio consequuntur commodi veniam fugit ut nesciunt
+                        quae
+                        iure
+                        quisquam repudiandae, pariatur atque odio libero.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
     </section>
     <!-- END OF SECTION -->
 
@@ -107,22 +181,25 @@
     <section class="contact-section" id="contact">
         <h2>Contact</h2>
         <p>If you would like to get in touch, fill out the form below</p>
+        <div class="form-container">
+            <form class="form" action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Humpty Dumpty">
 
-        <form class="form" action="#">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Humpty Dumpty">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="hello@email.com">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="hello@email.com">
+                <label for="number">Contact number</label>
+                <input type="number" id="number" placeholder="+447123456789">
 
-            <label for="number">Contact number</label>
-            <input type="number" id="number" placeholder="+447123456789">
+                <label for="message">Message</label>
+                <textarea placeholder="Write your message here" id="message"></textarea>
 
-            <label for="message">Message</label>
-            <textarea placeholder="Write your message here" id="message"></textarea>
-
-            <input type="submit" class="contact-button" value="Send message">
-        </form>
+                <input type="submit" class="contact-button" value="Send message">
+            </form>
+            <img src="https://cdn.pixabay.com/photo/2017/02/23/03/25/yarn-phone-2091195_1280.png" alt=""
+                class="contact-img">
+        </div>
 
         <p>Alternatively, you can contact me via social media</p>
         <div class="socials-links">
