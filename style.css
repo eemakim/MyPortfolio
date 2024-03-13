@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 header,
@@ -45,7 +45,7 @@ section h2 {
     align-items: center;
     gap: 2rem;
     width: 100%;
-    background-color: #111B06;
+    background-color: #222222;
     position: fixed;
     top: 0;
     height: 1rem;
@@ -90,8 +90,8 @@ section h2 {
 
 /* Name title section (home-section) */
 section.home-section {
-    background-color: #111B06;
-    color: #E7F7D8;
+    background-color: #5B7EA8;
+    color: #FAFBFC;
 }
 
 .name-container {
@@ -110,14 +110,14 @@ section.home-section {
 section.home-section a {
     background-color: #1D8958;
     text-decoration: none;
-    color: #E7F7D8;
+    color: #FAFBFC;
     padding: 1rem;
     border-radius: 27px;
     transition: all 600ms;
 }
 
 section.home-section a:hover {
-    background-color: #111B06;
+    background-color: #222222;
 }
 
 #CV-link {
@@ -237,6 +237,7 @@ section.home-section a:hover {
 
 section.about-section {
     color: #111B06;
+    background-color: #FAFBFC;
 }
 
 .about-me {
@@ -284,7 +285,7 @@ section.about-section {
 .timeline-container {
     display: flex;
     flex-direction: column;
-    margin: 10% 0;
+    margin: 20% 0;
 }
 
 .top,
@@ -300,36 +301,80 @@ section.about-section {
     gap: 5%;
 }
 
-.top .date {
-    align-self: last baseline;
+.date-top {
+    position: absolute;
+    top: -55px;
+    left: -20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.date-bottom {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .date {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
-.text {
-    max-width: 15%;
+
+.text-bottom {
+    position: absolute;
+    top: 20px;
+    left: -105px;
+    font-size: 1rem;
     text-align: center;
-    font-size: 0.8rem;
     line-height: 1.4;
     background-color: #111b06eb;
     color: #E7F7D8;
     border-radius: 15px;
-    padding: 2%;
+    width: 15rem;
+    padding: 1rem;
+}
 
+.text-top {
+    position: absolute;
+    top: -290px;
+    left: -110px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4;
+    background-color: #111b06eb;
+    color: #E7F7D8;
+    border-radius: 15px;
+    width: 15rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1620px) {
+    .timeline-container {
+        margin: 25% 5%;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .timeline-container {
+        margin: 30% 0;
+    }
 }
 
 .text-title {
     font-size: 1rem;
 }
 
+
 .middle-line {
     height: 2px;
     background-color: black;
     margin: 2% 5%;
     display: flex;
+    justify-content: space-between;
+
 }
 
 .middle-line-dot {
@@ -338,11 +383,7 @@ section.about-section {
     background-color: #111B06;
     border-radius: 50%;
     transform: translateY(-50%);
-    margin-right: 20%;
-}
-
-.middle-line-dot.end {
-    margin: 0;
+    position: relative;
 }
 
 
@@ -378,8 +419,8 @@ section.about-section {
 /* PORTFOLIO SECTION */
 
 section.portfolio-section {
-    background-color: #1D8958;
-    color: #111B06;
+    background-color: #A3B8D2;
+    color: #222222;
 }
 
 .portfolio-section h2 {
@@ -400,13 +441,13 @@ section.portfolio-section p {
 
 /* Project cards */
 .portfolio-grid {
-    background-color: #E7F7D8;
+    background-color: #FAFBFC;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1% 1%;
     max-width: 100%;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px 5px #111B06;
+    box-shadow: 5px 5px 10px 5px #5B7EA8;
     padding: 5%;
     align-items: start;
 }
@@ -541,8 +582,8 @@ section.portfolio-section p {
 /* CONTACT SECTION */
 
 section.contact-section {
-    background-color: #E7F7D8;
-    color: #111B06;
+    background-color: #FAFBFC;
+    color: #222222;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -624,8 +665,8 @@ section.contact-section {
 
 footer {
     padding: 1rem 4rem;
-    background-color: #111B06;
-    color: #E7F7D8;
+    background-color: #222222;
+    color: #FAFBFC;
 }
 
 @media screen and (max-width: 950px) {
